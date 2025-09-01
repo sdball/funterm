@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"os"
@@ -13,6 +14,12 @@ import (
 )
 
 const listHeight = 14
+
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+)
 
 var (
 	titleStyle        = lipgloss.NewStyle().MarginLeft(2)
@@ -103,6 +110,13 @@ func (m model) View() string {
 }
 
 func main() {
+	showVersion := flag.Bool("version", false, "Print version information and exit")
+	flag.Parse()
+	if *showVersion {
+		fmt.Printf("funterm %s (commit %s, built %s)\n", version, commit, date)
+		os.Exit(0)
+	}
+
 	items := []list.Item{
 		item("Game of Life"),
 	}
