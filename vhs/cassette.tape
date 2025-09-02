@@ -2,8 +2,9 @@ Output life.gif
 Set Shell zsh
 Sleep 1.5s
 Type "funterm"
+Sleep 1s
 Enter
-Sleep 500ms
+Sleep 1s
 Enter
 Sleep 2.5s
 Type " "
@@ -19,9 +20,9 @@ Tab
 Type "jjjj"
 Sleep 500ms
 Type " "
-Sleep 1s
-Type " rr"
+Sleep 5s
+Type " r"
 Sleep 500ms
 Type " "
-Sleep 5s
+Sleep 10s
 
