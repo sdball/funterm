@@ -20,14 +20,8 @@ Type "jjjj"
 Sleep 500ms
 Type " "
 Sleep 1s
-Type " jjr"
+Type " rr"
 Sleep 500ms
 Type " "
-Sleep 1s
-Type "==="
-Sleep 500ms
-Type "--r rr="
-Sleep 500ms
-Type " "
-Sleep 6.5s
+Sleep 5s
 
