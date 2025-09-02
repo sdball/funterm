@@ -47,7 +47,7 @@ func InitialModel(width, height int) model {
 	m := model{
 		cells:     life.NewSet(),
 		running:   false,
-		speed:     120 * time.Millisecond,
+		speed:     100 * time.Millisecond,
 		minSpeed:  1 * time.Millisecond,
 		maxSpeed:  2 * time.Second,
 		cellWidth: 2,
